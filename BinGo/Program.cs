@@ -33,10 +33,8 @@ while (!correct)
         Console.WriteLine("Error: Choose a Number");
     }
 }
-// boucle sur les essais
 while (Essai != Nombre)
 {
-    // test de l'essai par rapport à la valeur à chercher
     if (Essai > Nombre)
     {
         Console.WriteLine(" --> too Big !");
@@ -45,7 +43,6 @@ while (Essai != Nombre)
     {
         Console.WriteLine(" --> too Small !");
     }
-    // saisie d'un nouvel essai
     correct = false;
     while (!correct)
     {
@@ -60,9 +57,7 @@ while (Essai != Nombre)
             Console.WriteLine("Error: Choose a Number");
         }
     }
-    // compteur d'essais
     Attempt++;
 }
-// valeur trouvée
 Console.WriteLine("You find it in " + Attempt+ " attempt !");
 Console.ReadLine();
